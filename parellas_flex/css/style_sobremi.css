@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap");
+
+/* Aquí el CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100hv;
+  font-family: "Lora";
+}
+
+html {
+  font-size: 20px;
+}
+
+a:link,
+a:hover,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/*CABECERA*/
+
+body header nav {
+  background-color: black;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*body*/
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.aboutme header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  background-color: rgb(22, 148, 170);
+  text-align: center;
+  width: 200px;
+}
+
+figure {
+  width: 60vw;
+  height: 10rem;
+  background-color: grey;
+  margin-bottom: 2rem;
+}
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 900px) {
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutme header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h1 {
+    text-align: center;
+  }
+}
