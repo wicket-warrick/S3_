@@ -10,7 +10,7 @@
 
 body {
   height: 100hv;
-  font-family: "Lora";
+  font-family: "Lora", sans-serif;
 }
 
 html {
@@ -26,9 +26,8 @@ a:visited {
 
 /*CABECERA*/
 
-body header nav {
+body > header {
   background-color: black;
-  margin-bottom: 2rem;
   padding: 1.5rem 0;
   font-weight: bold;
   font-size: 1rem;
