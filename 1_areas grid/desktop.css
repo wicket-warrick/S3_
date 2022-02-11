@@ -1,0 +1,131 @@
+/*regras xerais*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 20px;
+}
+
+/*PAXONA WEB*/
+
+header {
+  grid-area: header;
+  background-color: grey;
+  color: black;
+  text-align: center;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header > h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 15fr 3fr;
+  grid-template-rows: 150px auto 150px;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer aside";
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 2rem 6rem;
+  grid-area: main;
+}
+section {
+  margin-bottom: 2rem;
+}
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+main p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+aside {
+  background-color: rgb(47, 0, 255);
+  grid-area: aside;
+}
+
+figure {
+  margin: 3rem auto;
+  width: 300px;
+}
+
+div {
+  margin: 0 auto;
+  width: 300px;
+}
+
+div p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+footer {
+  grid-area: footer;
+  background-color: aqua;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 1600px) {
+  figure {
+    display: none;
+  }
+  main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    grid-template-rows: 150px auto 250px;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer aside";
+  }
+  div {
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 550px) {
+  html {
+    font-size: 10px;
+  }
+  div {
+    width: 70%;
+  }
+}
+@media (max-width: 425px) {
+ div{
+   margin-top: 5rem;
+ }
