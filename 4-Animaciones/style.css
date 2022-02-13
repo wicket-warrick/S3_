@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  width: 5rem;
+  height: 5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+svg {
+  fill: gray;
+}
+
+.like {
+  animation-name: size;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes size {
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    fill: red;
+  }
+}
