@@ -13,6 +13,7 @@ html {
   font-size: 20px;
 }
 
+
 /*PAXONA WEB*/
 
 header {
@@ -104,8 +105,6 @@ footer {
     grid-template-columns: 1fr;
   }
   body {
-    height: 100vh;
-    display: grid;
     grid-template-columns: 4fr 7fr;
     grid-template-rows: 150px auto 250px;
     grid-template-areas:
@@ -117,9 +116,12 @@ footer {
     margin-top: 1rem;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   html {
-    font-size: 10px;
+    font-size: 16px;
+  }
+  header{
+    padding: 1rem 0;
   }
   div {
     width: 70%;
