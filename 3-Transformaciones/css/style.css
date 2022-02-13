@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  --time: 2s;
+  --dimension: 200px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > div {
+  height: var(--dimension);
+  width: var(--dimension);
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+div:nth-child(2) {
+  background-color: rgb(233, 54, 10);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transition-duration: var(--time);
+}
+
+div:nth-child(3) {
+  background-color: rgb(81, 233, 10);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform-origin: 100% 100%;
+  transition-duration: var(--time);
+}
+
+div:nth-child(4) {
+  background-color: rgb(233, 229, 10);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: 100% 0;
+  transition-duration: var(--time);
+}
+
+div:nth-child(5) {
+  background-color: rgb(32, 10, 233);
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 100%;
+  transition-duration: var(--time);
+}
+
+#container:hover div:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+#container:hover div:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+#container:hover div:nth-child(4) {
+  transform: rotate(-90deg);
+}
+#container:hover div:nth-child(5) {
+  transform: rotate(-90deg);
+}
